@@ -2,9 +2,25 @@
  let compCount=0;
  const choicess = document.querySelectorAll(".choice");
  const para =document.querySelector('#msg');
+ const score=document.querySelector("#Score")
  const user_score=document.querySelector("#user");
  const comp_score=document.querySelector("#comp")
  const restartbtn=document.querySelector("#restart")
+ const darkModeBtn=document.querySelector("#mode");
+ let lightmode=true;
+ darkModeBtn.addEventListener('click',()=>{
+  if(lightmode){
+    document.body.classList.remove("lightmode");
+    document.body.classList.add("darkmode");
+    lightmode=false;
+  }
+  else{
+    document.body.classList.add("lightmode");
+    document.body.classList.remove("darkmode");
+    lightmode=true;
+  }
+
+ })
  const showWinner= (userWin,userChoice,compChoice) =>{
    if (userWin){
     para.innerHTML=`You Win. Your ${userChoice} beats ${compChoice}`;

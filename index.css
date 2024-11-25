@@ -11,7 +11,7 @@ h1{
    /*jitni  hieight  hai utni line height dedo text center hojay vertical*/  line-height: 5rem;
 }
 .choices{
-    margin-top: 3rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -74,4 +74,17 @@ button{
     height: 40px;
     background-color: aqua;
     font-weight: 800;
+}
+#colorMode{
+    display: flex;
+   justify-content: end;
+   
+}
+.lightmode{
+    background-color: white;
+    color: black;
+}
+.darkmode{
+    background-color: black;
+    color: white;
 }
